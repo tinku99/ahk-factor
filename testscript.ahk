@@ -3,7 +3,23 @@ f2::
 tooltip
 msgbox hello
 return 
-
-!q::
-exitapp
-return 
+        
+f3::
+factorcall()
+return
+     
+!q::    
+exitapp 
+return  
+        
+        
+echo(msg){
+return msg
+}                      
+        
+        
+                       
+factorcall(){
+global functionPointer
+msgbox % dllcall(functionPointer, "str", "hello callback", "cdecl str") 
+}                      
