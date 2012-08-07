@@ -12,8 +12,7 @@ ahk-textdll
 : echo-callback ( -- alien )                                                                      
     { c-string utf16le } { { c-string utf16le } } cdecl [ dup drop ] alien-callback ;             
                                                                                                   
-"assign" "functionPointer" echo-callback alien-address present ahk-Function2                      
-! "functionPointer" echo-callback alien-address present ahk-assign                                  
+"functionPointer" echo-callback alien-address present ahk-assign                                  
                                                                                                   
 "mousemove"                                                                    
 "5"        
