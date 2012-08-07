@@ -17,9 +17,10 @@ echo(msg){
 return msg
 }                      
         
-        
                        
 factorcall(){
 global functionPointer
 msgbox % dllcall(functionPointer, "str", "hello callback", "cdecl str") 
 }                      
+    
+                       

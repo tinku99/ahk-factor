@@ -3,7 +3,7 @@ alien.syntax classes.struct combinators io.encodings.ascii kernel
 locals math system present vocabs.loader io.pathnames sequences io.backend ;
                                          
 IN: ahk.libahk                     
-! "C:\\Users\\naveen\\apps\\factor32\\work\\ahk\\libahk\\AutoHotkeyA32.dll"                                         
+
 << "libahk" "ahk.libahk" vocab-source-path absolute-path parent-directory
 "AutoHotkeyA32.dll" append normalize-path cdecl add-library >> 
                                                                                  

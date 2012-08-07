@@ -1,8 +1,8 @@
 ! Copyright (C) 2012 Your name.                        
 ! See http://factorcode.org/license.txt for BSD license.
-USING: ahk.libahk ;                              
+USING: ahk.libahk2 ;                                  
                                                        
-IN: ahk                                             
+IN: ahk.ahk2                                             
                                                        
 : ahk-dll ( filename options parameters -- handle )    
     ahkdll ;                                           
@@ -47,7 +47,7 @@ IN: ahk
     ""   ""   ""   ""  ""   ""   "" ""   ahkPostFunction  ;   
 : ahk-PostFunction3 ( funcname param1 param2 param3 -- uintcode )
     ""   ""   ""   ""  ""   ""   ""   ahkPostFunction  ;
-                                                   
+                                                       
 : add-File (  filename aAllowDuplicateInclude  aIgnoreLoadFailure -- uintp )
     addFile ;                                          
 : add-Script (  script aReplace -- uintp )             
