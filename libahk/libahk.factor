@@ -1,4 +1,4 @@
-USING: accessors alien alien.accessors alien.c-types alien.libraries
+USING: accessors alien alien.accessors alien.c-types alien.libraries 
 alien.syntax classes.struct combinators io.encodings.ascii kernel
 locals math system present vocabs.loader io.pathnames sequences io.backend ;
                                          
@@ -27,8 +27,6 @@ FUNCTION: c-string ahkFunction ( c-string func,  c-string param1,  c-string para
 FUNCTION: uint ahkPostFunction ( c-string func,  c-string param1,  c-string param2,  c-string param3,
                                  c-string param4,  c-string param5,  c-string param6,  c-string param7,
                                  c-string param8,  c-string param9,  c-string param10  ) ;
-
-
 FUNCTION: uint* addFile ( c-string filename,  bool aAllowDuplicateInclude,  int aIgnoreLoadFailure ) ;
 FUNCTION: uint* addScript ( c-string script,  int aReplace ) ;
 FUNCTION: bool ahkExec ( c-string script ) ;
