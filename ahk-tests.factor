@@ -5,16 +5,16 @@ IN: temporary
 "testscript.ahk" append normalize-path
 ""                                             
 ""                                             
-ahkdll                                         
-                                    
+ahk-dll                                         
                                     
 : echo-callback ( -- alien )        
     c-string { c-string } cdecl [ dup drop ] alien-callback ;
                             
 "functionPointer" echo-callback alien-address present ahk-assign
+
+! press F3 to run callback from an autohotkey hotkey. 
                                                                 
-                                                                
-ahk-Terminate                                                   
+1 ahk-Terminate                                                   
 
 
 
