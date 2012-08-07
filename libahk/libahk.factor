@@ -19,7 +19,7 @@ FUNCTION: c-string ahkgetvar ( c-string name, uint getVar  ) ;
 FUNCTION: uint ahkassign ( c-string name,  c-string value ) ;
 FUNCTION: uint* ahkExecuteLine ( uint* line, uint aMode, uint wait ) ;
 FUNCTION: bool ahkLabel ( c-string aLabelName,  uint nowait  ) ;
-FUNCTION: uint* ahkFindFunc ( c-string funcname) ;
+FUNCTION: uint* ahkFindFunc ( c-string funcname ) ;
 FUNCTION: c-string ahkFunction ( c-string func,  c-string param1,  c-string param2,  c-string param3,
                               c-string param4,  c-string param5,  c-string param6,  c-string param7,
                               c-string param8,  c-string param9,  c-string param10  ) ;
